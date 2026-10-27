@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bash 4All — учим Linux bash на практике</title>
+<meta name="description" content="Bash 4All — интерактивный курс bash для сисадминов и специалистов по ИБ с учебной консолью.">
+<meta name="theme-color" content="#2f5bea">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%232f5bea%27/%3E%3Cpath d=%27M7 9l8 7-8 7%27 stroke=%27white%27 stroke-width=%273%27 fill=%27none%27/%3E%3Cpath d=%27M17 23h8%27 stroke=%27white%27 stroke-width=%273%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/terminal.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/pages.css">
+<script>
+(function(){function show(m){var b=document.getElementById('errbar');if(!b){b=document.createElement('div');b.id='errbar';b.setAttribute('role','alert');b.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:99;background:#b42318;color:#fff;padding:10px 16px;font:13px/1.4 system-ui,sans-serif';(document.body||document.documentElement).appendChild(b)}b.textContent='Ошибка скрипта: '+m}
+window.addEventListener('error',function(e){show(e.message||'неизвестная ошибка')});
+window.addEventListener('unhandledrejection',function(e){show(String(e.reason&&e.reason.message||e.reason))})})();
+</script>
+<noscript><p style="padding:16px">Для работы курса нужен включённый JavaScript.</p></noscript>
+</head><body>
+<header><a class="lg" href="index.html">Bash <i>4All</i></a><div class="pg"><div id="bar"></div></div><span id="pc"></span><div class="nav-menu"><button data-go="index.html">Главная</button><button data-go="course.html">Курс</button><button data-go="progress.html">Прогресс</button><button data-go="about.html">О проекте</button></div></header>
+<section class="hero"><h1>Bash <i>4All</i></h1>
+<p class="subtitle">Учите bash на практике: короткие уроки, задания с автопроверкой и собственная консоль. Для сисадминов и специалистов по ИБ — с нуля до автоматизации.</p>
+<div class="terminal-deco"><span class="prompt">$</span> ls /etc | grep ssh > result.txt</div>
+<div class="actions"><a class="btn primary" href="course.html">Начать курс</a><a class="btn" href="progress.html">Мой прогресс</a></div></section>
+<section class="features"><div class="card"><h3>16 уроков</h3><p>От команд и конвейеров до функций, условий и поиска секретов.</p></div><div class="card"><h3>Своя консоль</h3><p>Безопасный симулятор: процессы, службы, файлы, журналы, сеть.</p></div><div class="card"><h3>Автопроверка</h3><p>Задание засчитывается по результату вашей команды.</p></div><div class="card"><h3>Для ИБ</h3><p>Аудит пользователей, журналы, подозрительные соединения, поиск секретов.</p></div></section>
+<section class="workflow"><h2>Как проходит урок</h2><div class="steps"><span>Теория</span><span class="arrow">↓</span><span>Примеры в один клик</span><span class="arrow">↓</span><span>Задание в консоли</span><span class="arrow">↓</span><span>Автопроверка ✓</span></div></section>
+<section class="safe"><div class="shield">🛡️</div><p>Всё работает в вашем браузере. Консоль — симулятор: она ничего не меняет на вашем компьютере. Прогресс хранится только локально.</p></section>
+<section class="stats"><h2>Ваш прогресс</h2><div class="bar-wrap"><div class="bar-fill" id="hb"></div></div><div class="detail" id="hd"></div></section>
+<div id="ts" role="status"></div>
+<script src="js/bundles/home.js"></script>
+</body></html>

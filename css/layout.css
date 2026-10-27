@@ -1,0 +1,167 @@
+/* Layout: шапка, навигация, сетка */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  background: var(--pn);
+  border-bottom: 1px solid var(--bd);
+}
+
+.lg {
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -.3px;
+  white-space: nowrap;
+}
+
+.lg i {
+  font-style: normal;
+  color: var(--ac);
+}
+
+.pg {
+  flex: 1;
+  height: 6px;
+  background: var(--bd);
+  border-radius: 9px;
+  overflow: hidden;
+  max-width: 360px;
+}
+
+#bar {
+  height: 100%;
+  width: 0;
+  background: var(--ac);
+  transition: width .4s;
+}
+
+#pc {
+  color: var(--mu);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.gh {
+  background: none;
+  border: 1px solid var(--bd);
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 13px;
+  color: var(--mu);
+}
+
+#app {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+nav {
+  position: fixed;
+  inset: 54px auto 0 0;
+  width: 270px;
+  max-width: 86vw;
+  background: var(--pn);
+  border-right: 1px solid var(--bd);
+  padding: 14px;
+  overflow: auto;
+  transform: translateX(-102%);
+  transition: transform .25s;
+  z-index: 4;
+}
+
+nav.open {
+  transform: none;
+}
+
+nav h4 {
+  margin: 16px 6px 6px;
+  font-size: 13px;
+  color: var(--mu);
+  font-weight: 600;
+}
+
+nav h4 span {
+  color: var(--ac);
+  font-weight: 500;
+}
+
+nav button {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 7px 8px;
+  font-size: 14px;
+}
+
+nav button:hover {
+  background: var(--as);
+}
+
+nav button.on {
+  background: var(--as);
+  color: var(--ac);
+  font-weight: 600;
+}
+
+nav b {
+  width: 18px;
+  color: var(--mu);
+  font-weight: 500;
+}
+
+nav .d b {
+  color: var(--ok);
+}
+
+main {
+  padding: 22px 18px 30px;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  #app {
+    grid-template-columns: 260px minmax(0, 1fr) minmax(0, 1fr);
+    height: calc(100vh - 54px);
+  }
+
+  #mn {
+    display: none;
+  }
+
+  nav {
+    position: static;
+    transform: none;
+    width: auto;
+    max-width: none;
+  }
+
+  main, #tm {
+    overflow: auto;
+    height: 100%;
+  }
+
+  main {
+    margin: 0;
+    max-width: none;
+    padding: 28px 32px;
+  }
+
+  #tm {
+    margin: 0;
+    border-radius: 0;
+    border-width: 0 0 0 1px;
+    min-height: 0;
+  }
+}

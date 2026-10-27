@@ -1,0 +1,325 @@
+/* Страница: Главная, Прогресс, О проекте */
+
+/* ---------- Стартовая страница ---------- */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0 0 12px;
+  letter-spacing: -1px;
+}
+
+.hero h1 i {
+  color: var(--ac);
+  font-style: normal;
+}
+
+.hero .subtitle {
+  font-size: 18px;
+  color: var(--mu);
+  max-width: 560px;
+  margin: 0 auto 32px;
+  line-height: 1.5;
+}
+
+.hero .terminal-deco {
+  background: var(--tb);
+  color: var(--tt);
+  font: 14px ui-monospace, Menlo, Consolas, monospace;
+  padding: 14px 22px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 32px;
+  text-align: left;
+  border: 1px solid var(--bd);
+}
+
+.hero .terminal-deco .prompt {
+  color: #fff;
+}
+
+.hero .actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--bd);
+  background: var(--pn);
+  color: var(--tx);
+  cursor: pointer;
+  transition: border-color .2s, background .2s;
+}
+
+.hero .btn:hover {
+  border-color: var(--ac);
+}
+
+.hero .btn.primary {
+  background: var(--ac);
+  color: #000;
+  border-color: var(--ac);
+}
+
+.hero .btn.primary:hover {
+  background: #ccc;
+}
+
+/* Карточки возможностей */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto 48px;
+  padding: 0 20px;
+}
+
+.features .card {
+  background: var(--pn);
+  border: 1px solid var(--bd);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.features .card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: var(--tx);
+}
+
+.features .card p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--mu);
+}
+
+/* Workflow */
+.workflow {
+  max-width: 560px;
+  margin: 0 auto 48px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.workflow h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.workflow .steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.workflow .steps span {
+  font-size: 14px;
+  color: var(--tx);
+  background: var(--pn);
+  border: 1px solid var(--bd);
+  padding: 6px 18px;
+  border-radius: 8px;
+}
+
+.workflow .steps .arrow {
+  color: var(--mu);
+  font-size: 12px;
+}
+
+/* Безопасность */
+.safe {
+  max-width: 560px;
+  margin: 0 auto 48px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.safe .shield {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.safe p {
+  color: var(--mu);
+  font-size: 14px;
+}
+
+/* Статистика */
+.stats {
+  max-width: 400px;
+  margin: 0 auto 48px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.stats h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.stats .bar-wrap {
+  height: 10px;
+  background: var(--bd);
+  border-radius: 9px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.stats .bar-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--ac);
+  transition: width .4s;
+}
+
+.stats .detail {
+  font-size: 14px;
+  color: var(--mu);
+}
+
+/* ---------- Страница прогресса ---------- */
+.progress-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.progress-page h1 {
+  margin-bottom: 24px;
+}
+
+.progress-page .progress-bar-wrap {
+  height: 12px;
+  background: var(--bd);
+  border-radius: 9px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progress-page .progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--ac);
+  transition: width .4s;
+}
+
+.progress-page .progress-detail {
+  font-size: 15px;
+  color: var(--mu);
+  margin-bottom: 28px;
+}
+
+.progress-page .topics h3 {
+  margin-top: 24px;
+}
+
+.progress-page .topics ul {
+  list-style: none;
+  padding: 0;
+}
+
+.progress-page .topics li {
+  padding: 6px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.progress-page .topics li .icon {
+  width: 20px;
+  text-align: center;
+}
+
+.progress-page .topics li.done {
+  color: var(--ok);
+}
+
+.progress-page .topics li.current {
+  color: var(--ac);
+  font-weight: 600;
+}
+
+.progress-page .next-topic {
+  margin-top: 24px;
+  padding: 14px;
+  background: var(--as);
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.progress-page .next-topic strong {
+  color: var(--ac);
+}
+
+/* ---------- Страница "О проекте" ---------- */
+.about-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.about-page h1 {
+  margin-bottom: 20px;
+}
+
+.about-page h2 {
+  margin-top: 28px;
+  font-size: 18px;
+}
+
+.about-page p, .about-page li {
+  color: var(--mu);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.about-page ul {
+  padding-left: 20px;
+}
+
+.about-page li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Навигация-меню ---------- */
+.nav-menu {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.nav-menu button {
+  background: none;
+  border: 0;
+  font-size: 13px;
+  color: var(--mu);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.nav-menu button:hover {
+  background: var(--as);
+  color: var(--tx);
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 999px) {
+  .nav-menu {
+    display: none;
+  }
+}

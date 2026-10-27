@@ -1,0 +1,133 @@
+/* Компоненты: карточки, задания, навигация, тосты */
+
+.bd {
+  color: var(--ac);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 4px 0 14px;
+  letter-spacing: -.5px;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 22px 0 8px;
+  color: var(--mu);
+  font-weight: 600;
+}
+
+.ch {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 0 0 6px;
+  padding: 9px 12px;
+  border: 1px solid var(--bd);
+  background: var(--pn);
+  border-radius: 10px;
+  font: 13px ui-monospace, Menlo, Consolas, monospace;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.ch:hover {
+  border-color: var(--ac);
+}
+
+.ch:before {
+  content: "▶ ";
+  color: var(--ac);
+}
+
+.task {
+  margin-top: 22px;
+  padding: 16px;
+  border: 1px solid var(--bd);
+  border-left: 4px solid var(--ac);
+  border-radius: 12px;
+  background: var(--pn);
+}
+
+.task.ok {
+  border-left-color: var(--ok);
+}
+
+.task.ok .st {
+  display: block;
+}
+
+.st {
+  display: none;
+  color: var(--ok);
+  font-weight: 600;
+}
+
+.task p {
+  margin: 4px 0 10px;
+}
+
+.task button {
+  background: none;
+  border: 1px solid var(--bd);
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 13px;
+  color: var(--mu);
+}
+
+#hi {
+  margin-top: 10px;
+  font: 13px ui-monospace, monospace;
+}
+
+.nv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.nv button {
+  border: 1px solid var(--bd);
+  background: var(--pn);
+  border-radius: 10px;
+  padding: 9px 16px;
+}
+
+.nv .pr {
+  background: var(--ac);
+  color: #fff;
+  border-color: var(--ac);
+}
+
+#ts {
+  position: fixed;
+  bottom: 22px;
+  left: 50%;
+  transform: translate(-50%, 40px);
+  background: var(--ok);
+  color: #fff;
+  padding: 9px 18px;
+  border-radius: 99px;
+  opacity: 0;
+  transition: .3s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+#ts.on {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+
+/* Администраторский контекст урока */
+.scenario{margin:18px 0 24px;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+.scenario-title{font-weight:800;font-size:1.05rem;margin-bottom:8px}
+.scenario p{margin:0 0 12px;line-height:1.6}
+.scenario-steps{padding-top:10px;border-top:1px solid var(--line)}
+.scenario-steps ol{margin:8px 0 0;padding-left:22px}
+.scenario-steps li{margin:5px 0}

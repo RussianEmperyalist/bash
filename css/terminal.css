@@ -1,0 +1,70 @@
+/* Терминал лаборатории */
+
+#tm {
+  margin: 0 12px 24px;
+  display: flex;
+  flex-direction: column;
+  height: 62vh;
+  min-height: 340px;
+  background: var(--tb);
+  color: var(--tt);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--bd);
+}
+
+.th2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 14px;
+  font-size: 12.5px;
+  color: #8a97a8;
+  border-bottom: 1px solid #333;
+}
+
+.th2 button {
+  background: none;
+  border: 0;
+  color: #8a97a8;
+  font-size: 12.5px;
+}
+
+#o {
+  flex: 1;
+  overflow: auto;
+  padding: 12px 14px;
+  font: 13px/1.5 ui-monospace, Menlo, Consolas, monospace;
+  white-space: pre;
+}
+
+.cm { color: #fff; }
+.er { color: #ff6b6b; }
+.wh { color: #d4d4d4; }
+.sy { color: #aaa; }
+
+.ir {
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+  border-top: 1px solid #333;
+  font: 13px ui-monospace, Menlo, Consolas, monospace;
+}
+
+#ps {
+  color: #fff;
+  white-space: nowrap;
+  max-width: 46%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#in {
+  flex: 1;
+  min-width: 0;
+  background: none;
+  border: 0;
+  outline: 0;
+  color: var(--tt);
+  font: inherit;
+}

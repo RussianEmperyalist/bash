@@ -1,0 +1,22 @@
+/* Ссылки в шапке и мобильное меню страниц */
+a.lg{color:inherit;text-decoration:none}
+.pages{margin-top:18px;padding-top:12px;border-top:1px solid var(--bd)}
+.pages a{display:block;padding:7px 8px;border-radius:8px;color:var(--mu);text-decoration:none;font-size:14px}
+.pages a:hover{background:var(--as);color:var(--tx)}
+header .pg{margin-left:auto}
+header .nav-menu{margin-left:0}
+.hero .terminal-deco{max-width:100%;overflow-x:auto;white-space:nowrap}
+@media (min-width:1000px){.pages{display:none}}
+@media (max-width:999px){#pc{display:none}header .pg{max-width:none}}
+
+/* Длинные примеры команд переносятся на мобильных, а не прокручиваются вбок */
+.ch{white-space:pre-wrap;overflow-wrap:anywhere;overflow-x:visible;line-height:1.45}
+
+/* Оформление теории в уроках: списки, таблицы, абзацы */
+#ls p{margin:0 0 12px}
+#ls ul{margin:0 0 12px;padding-left:22px}
+#ls li{margin-bottom:5px}
+.tw{overflow-x:auto;margin:10px 0 14px}
+.tw table{border-collapse:collapse;width:100%;font-size:14px}
+.tw th,.tw td{border:1px solid var(--bd);padding:7px 10px;text-align:left;vertical-align:top}
+.tw th{background:var(--as);font-weight:600;white-space:nowrap}
